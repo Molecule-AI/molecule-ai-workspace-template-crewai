@@ -2,12 +2,22 @@ name: CrewAI Agent
 description: CrewAI — role-based agent with task delegation and crew orchestration
 version: 1.0.0
 tier: 2
-
 runtime: crewai
 model: openai:gpt-4.1-mini
-
 env:
   required:
-    - OPENAI_API_KEY
-
+  - OPENAI_API_KEY
 template_schema_version: 1
+models:
+- id: openai:gpt-4.1-mini
+  name: GPT-4.1 Mini (OpenAI)
+  required_env:
+  - OPENAI_API_KEY
+- id: openai:gpt-4o
+  name: GPT-4o (OpenAI)
+  required_env:
+  - OPENAI_API_KEY
+- id: openai:o4-mini
+  name: o4-Mini (OpenAI)
+  required_env:
+  - OPENAI_API_KEY
