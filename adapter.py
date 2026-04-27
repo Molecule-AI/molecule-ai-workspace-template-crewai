@@ -142,3 +142,6 @@ class CrewAIA2AExecutor(AgentExecutor):
 
     async def cancel(self, context, event_queue):  # pragma: no cover
         pass
+
+
+Adapter = CrewAIAdapter
